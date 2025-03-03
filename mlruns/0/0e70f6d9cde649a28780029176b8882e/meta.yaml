@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ethantingzhipeng/Desktop/End-to-End-Project-Using-MLflow-DVC-with-CICD-Deployment/mlruns/0/0e70f6d9cde649a28780029176b8882e/artifacts
+end_time: 1741006446563
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e70f6d9cde649a28780029176b8882e
+run_name: bold-cod-615
+run_uuid: 0e70f6d9cde649a28780029176b8882e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741006438182
+status: 3
+tags: []
+user_id: ethantingzhipeng

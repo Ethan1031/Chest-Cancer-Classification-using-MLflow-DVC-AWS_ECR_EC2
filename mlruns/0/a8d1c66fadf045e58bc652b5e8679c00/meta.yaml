@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ethantingzhipeng/Desktop/End-to-End-Project-Using-MLflow-DVC-with-CICD-Deployment/mlruns/0/a8d1c66fadf045e58bc652b5e8679c00/artifacts
+end_time: 1741006120264
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a8d1c66fadf045e58bc652b5e8679c00
+run_name: sedate-wolf-553
+run_uuid: a8d1c66fadf045e58bc652b5e8679c00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741006112107
+status: 3
+tags: []
+user_id: ethantingzhipeng
