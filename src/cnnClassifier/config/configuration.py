@@ -74,12 +74,24 @@ class ConfigurationManager:
 
     
     def get_evaluation_config(self) -> EvaluationConfig:
-        eval_config = EvaluationConfig(
-            path_of_model="artifacts/training/model.h5",
-            training_data="artifacts/data_ingestion/Chest-CT-Scan-data",
-            mlflow_uri="https://dagshub.com/Ethan1031/End-to-End-Project-Using-MLflow-DVC-with-CICD-Deployment.mlflow",
+        # Use config values if available, otherwise use hardcoded values
+        eval_config = self.config.get('evaluation', {})
+        
+        # Create evaluation directory if it doesn't exist
+        eval_dir = os.path.join(self.config.artifacts_root, "evaluation")
+        create_directories([Path(eval_dir)])
+        
+        # Define scores file path
+        scores_file = os.path.join(eval_dir, "scores.json")
+        
+        evaluation_config = EvaluationConfig(
+            path_of_model=Path(eval_config.get('model_path', "artifacts/training/model.h5")),
+            training_data=Path(eval_config.get('training_data', "artifacts/data_ingestion/Chest-CT-Scan-data")),
+            mlflow_uri=eval_config.get('mlflow_uri', "https://dagshub.com/Ethan1031/End-to-End-Project-Using-MLflow-DVC-with-CICD-Deployment.mlflow"),
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
-            params_batch_size=self.params.BATCH_SIZE
+            params_batch_size=self.params.BATCH_SIZE,
+            scores_file=Path(scores_file)
         )
-        return eval_config
+        
+        return evaluation_config

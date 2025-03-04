@@ -13,7 +13,7 @@ class Evaluation:
 
     
     def _valid_generator(self):
-
+        """Create validation data generator with the correct class count"""
         datagenerator_kwargs = dict(
             rescale = 1./255,
             validation_split=0.30
@@ -39,21 +39,25 @@ class Evaluation:
 
     @staticmethod
     def load_model(path: Path) -> tf.keras.Model:
+        """Load the Keras model from path with error handling"""
         return tf.keras.models.load_model(path)
     
 
     def evaluation(self):
+        """Evaluate the model and save scores"""
         self.model = self.load_model(self.config.path_of_model)
         self._valid_generator()
         self.score = self.model.evaluate(self.valid_generator)
         self.save_score()
 
     def save_score(self):
+        """Save evaluation scores to JSON file"""
         scores = {"loss": self.score[0], "accuracy": self.score[1]}
         save_json(path=Path("scores.json"), data=scores)
 
     
     def log_into_mlflow(self):
+        """Log model and metrics to MLflow"""
         mlflow.set_registry_uri(self.config.mlflow_uri)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         

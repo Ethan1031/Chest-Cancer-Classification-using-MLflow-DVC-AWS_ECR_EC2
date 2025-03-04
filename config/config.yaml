@@ -14,3 +14,10 @@ prepare_base_model:
 training:
   root_dir: artifacts/training
   trained_model_path: artifacts/training/model.h5
+
+evaluation:
+  root_dir: artifacts/evaluation
+  model_path: artifacts/training/model.h5
+  training_data: artifacts/data_ingestion/Chest-CT-Scan-data
+  scores_file: artifacts/evaluation/scores.json
+  mlflow_uri: https://dagshub.com/Ethan1031/End-to-End-Project-Using-MLflow-DVC-with-CICD-Deployment.mlflow

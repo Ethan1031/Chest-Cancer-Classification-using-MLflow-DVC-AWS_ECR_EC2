@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ethantingzhipeng/Desktop/End-to-End-Project-Using-MLflow-DVC-with-CICD-Deployment/mlruns/0/7e3eca73627343939a0c343bcd8d3f51/artifacts
+end_time: 1741025460746
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7e3eca73627343939a0c343bcd8d3f51
+run_name: gaudy-eel-426
+run_uuid: 7e3eca73627343939a0c343bcd8d3f51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741025452839
+status: 3
+tags: []
+user_id: ethantingzhipeng

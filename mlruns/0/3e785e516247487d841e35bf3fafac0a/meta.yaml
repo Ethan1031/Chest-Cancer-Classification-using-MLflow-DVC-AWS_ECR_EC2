@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ethantingzhipeng/Desktop/End-to-End-Project-Using-MLflow-DVC-with-CICD-Deployment/mlruns/0/3e785e516247487d841e35bf3fafac0a/artifacts
+end_time: 1741024025269
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3e785e516247487d841e35bf3fafac0a
+run_name: charming-roo-795
+run_uuid: 3e785e516247487d841e35bf3fafac0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741024017367
+status: 3
+tags: []
+user_id: ethantingzhipeng

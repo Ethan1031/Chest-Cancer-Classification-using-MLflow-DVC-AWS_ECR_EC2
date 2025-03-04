@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ethantingzhipeng/Desktop/End-to-End-Project-Using-MLflow-DVC-with-CICD-Deployment/mlruns/0/339ef7dc482041f1bc94f4176bb7bd06/artifacts
+end_time: 1741025112132
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 339ef7dc482041f1bc94f4176bb7bd06
+run_name: luxuriant-gnu-66
+run_uuid: 339ef7dc482041f1bc94f4176bb7bd06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741025104783
+status: 3
+tags: []
+user_id: ethantingzhipeng
